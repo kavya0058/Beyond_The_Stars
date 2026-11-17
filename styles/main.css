@@ -1,0 +1,348 @@
+
+/* General Styling */
+body {
+    background-color: #080d24;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Website Wrapper */
+
+.site-wrapper {
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #111a38;
+    border: none;
+}
+
+
+/* Header */
+.site-header {
+    background: linear-gradient(to right, #101b45, #512b81, #101b45);
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.site-header h1 {
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.site-header p {
+    color: #d8c9ff;
+    font-size: 16px;
+    margin: 8px 0 0;
+}
+
+
+/* Navigation Bar */
+
+.site-wrapper nav.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: #080d24;
+    padding: 12px 15px;
+    border-bottom: 1px solid #6045a5;
+    box-sizing: border-box;
+}
+
+.site-wrapper nav.navbar a {
+    display: inline-block;
+    color: #d8c9ff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.site-wrapper nav.navbar a:hover,
+.site-wrapper nav.navbar a.active {
+    background-color: #3b2866;
+    color: white;
+}
+/* Main Content */
+.page-content {
+    padding: 25px;
+    margin: 0;
+}
+
+/* Section */
+section h2 {
+    color: #d5b8ff;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #bca4ff;
+    margin-top: 25px;
+}
+
+/* Space Image */
+.space-image {
+    width: 45%;
+    height: auto;
+    float: left;
+    margin: 0 20px 15px 0;
+    border: 3px solid #8b6bd6;
+    border-radius: 10px;
+}
+
+/* Paragraph */
+section p,
+aside p {
+    text-align: justify;
+    color: #e1e5f5;
+}
+
+/* Lists */
+section ul,
+aside ul {
+    padding-left: 25px;
+}
+
+section li,
+aside li {
+    margin-bottom: 10px;
+}
+
+/* Aside */
+aside {
+    background-color: #1b2548;
+    padding: 20px;
+    border-left: 2px solid #6045a5;
+    border-radius: 8px;
+}
+
+aside h3 {
+    color: #d5b8ff;
+}
+
+/* Links */
+a {
+    color: #c5a6ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+    background: linear-gradient(to right, #101b45, #512b81, #101b45);
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #6045a5;
+}
+
+.site-footer p {
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .site-wrapper {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .site-header h1 {
+        font-size: 25px;
+    }
+
+    .page-content {
+        padding: 15px;
+    }
+
+    .space-image {
+        width: 100%;
+        float: none;
+        margin: 0 0 15px 0;
+    }
+
+    aside {
+        border-left: none;
+        border-top: 2px solid #6045a5;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .site-header h1 {
+        font-size: 21px;
+        letter-spacing: 1px;
+    }
+
+    .site-header p {
+        font-size: 13px;
+    }
+
+    .navbar .nav-link {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+
+/* Solar System Page */
+
+.solar-figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.solar-figure img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #6045a5;
+    border-radius: 10px;
+}
+
+.solar-figure figcaption {
+    color: #d8c9ff;
+    font-size: 14px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Planet Articles */
+
+.planet-article {
+    margin-top: 15px;
+}
+
+.planet-article article {
+    background-color: #1b2548;
+    padding: 15px;
+    border: 1px solid #6045a5;
+    border-radius: 8px;
+}
+
+.planet-article h4 {
+    color: #c5a6ff;
+}
+
+/* Sidebar Images */
+
+.sidebar-image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border: 2px solid #8b6bd6;
+    border-radius: 8px;
+}
+
+aside a {
+    display: block;
+    margin-bottom: 15px;
+}
+
+aside a span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Mobile Layout */
+
+@media screen and (max-width: 768px) {
+
+    .planet-article article {
+        width: 100%;
+    }
+
+    .sidebar-image {
+        max-width: 250px;
+    }
+}
+
+
+/* Space Exploration Page */
+
+.exploration-carousel {
+    background-color: #1b2548;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #6045a5;
+    border-radius: 10px;
+}
+
+.exploration-carousel input {
+    display: none;
+}
+
+.carousel-slides .slide {
+    display: none;
+    text-align: center;
+}
+
+.carousel-slides img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carousel-slides p {
+    color: #d8c9ff;
+    margin-top: 10px;
+}
+
+#slide1:checked ~ .carousel-slides .slide-one {
+    display: block;
+}
+
+#slide2:checked ~ .carousel-slides .slide-two {
+    display: block;
+}
+
+#slide3:checked ~ .carousel-slides .slide-three {
+    display: block;
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.carousel-controls label {
+    display: inline-block;
+    background-color: #6045a5;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carousel-controls label:hover {
+    background-color: #9875e8;
+}
+
+.exploration-carousel a {
+    color: #c5a6ff;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-slides img {
+        height: 200px;
+    }
+}
+
+
+
+
